@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theroich/torrentz2"
+  },
+  "keywords": [
+    "sonoff",
+    "mqtt",
+    "tasmota"
+  ],
+  "author": "theroich",
   "license": "ISC",
   "dependencies": {
     "mqtt": "^2.12.0",
