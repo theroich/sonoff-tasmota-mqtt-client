@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/theroich/torrentz2"
+    "url": "https://github.com/theroich/sonoff-tasmota-mqtt-client"
   },
   "keywords": [
     "sonoff",
