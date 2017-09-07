@@ -45,7 +45,7 @@ function ClientFactory(options){
     };
 
 
-
+	 /* promise get state implementation */
     this.getState = function(){
         var deferred = q.defer();
         client.publish(topicPower,'');
