@@ -1,17 +1,17 @@
-let q = require('q');
-let mqtt = require('mqtt');
-let events = require('events');
+const q = require('q');
+const mqtt = require('mqtt');
+const events = require('events');
 const util = require('util');
 
 
 function ClientFactory(options){
-    var topicState= `stat/${options.name}/POWER`;
-    var topicPower = `cmnd/${options.name}/power`;
+    const topicState= `stat/${options.name}/POWER`;
+    const topicPower = `cmnd/${options.name}/power`;
 
     events.EventEmitter.call(this);
 
-    let self = this;
-    let client  = mqtt.connect(options.host,{
+    const self = this;
+    const client  = mqtt.connect(options.host,{
         port: options.port,
         username: options.username,
         password: options.password,
@@ -47,7 +47,7 @@ function ClientFactory(options){
 
 	 /* promise get state implementation */
     this.getState = function(){
-        var deferred = q.defer();
+        const deferred = q.defer();
         client.publish(topicPower,'');
 
         client.on('message', function (topic, message) {
